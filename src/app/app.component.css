@@ -1,0 +1,53 @@
+.container-fluid{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.h1{
+    width: 160px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    font-size: large;
+}
+li a:hover{
+    background:blueviolet;
+    transition: 0.9s;
+}
+.navbar a:hover{
+    color: black;
+}
+/* Footer Styling */
+.footer {
+    background-color: black; /* Black background */
+    color: white; /* White text color */
+    position: fixed; /* Keeps the footer at the bottom of the page */
+    width: 100%; /* Full width */
+    bottom: 0; /* Sticks to the bottom */
+    padding: 20px 0;
+  }
+  
+  /* Remove margin for social links */
+  .footer a {
+    color: white; /* White link color */
+    margin-right: 10px;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  .footer p {
+    color: white; /* White link color */
+    margin-right: 10px;
+    text-decoration: none; /* Remove underline */
+  }

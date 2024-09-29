@@ -1,0 +1,48 @@
+/* Team Component */
+.team {
+  padding: 40px;
+  background-color: black; /* Light grey background */
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white; /* Dark text color */
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+  margin-top: 40px;
+}
+
+.team-member {
+  text-align: center;
+  width: 250px;
+  margin: 50px;
+  background-color:blueviolet; /* White background for team member cards */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: white; /* Darker text for the name */
+}
+
+.team-member p {
+  font-size: 14px;
+  color:whitesmoke; /* Grey text color for role and description */
+}
+
+/* Team Member Image */
+.team-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20%; /* Circular images for team members */
+  margin-bottom: 15px;
+}

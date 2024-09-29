@@ -1,0 +1,68 @@
+/* Services Component
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .service-item {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    color: #666;
+  }
+  .h2{
+    color: white;
+  } */
+   /* Styling for h2 */
+h2 {
+  color: white;  /* Set text color to white */
+  font-size: 2em;  /* Adjust font size */
+  text-align: center;  /* Center-align the heading */
+  margin-bottom: 20px;  /* Add space below the heading */
+}
+
+/* Additional styling for the service list */
+.service-list {
+  display: flex;  /* Flexbox for aligning items */
+  justify-content: space-around;  /* Distribute service items evenly */
+  padding: 20px;
+  background-color: #333;  /* Dark background to contrast the text */
+}
+
+.service-item {
+  width: 30%;  /* Make each service item take up 30% of the container */
+  color: white;  /* Set the text color of service items to white */
+  background-color: #444;  /* Darker background for individual items */
+  padding: 20px;
+  border-radius: 8px;  /* Rounded corners for each service item */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add a slight shadow */
+}
+
+.service-item h3 {
+  color: blueviolet;
+  font-weight: 600;  /* Highlight the service title with a different color */
+}
+
+.service-item p {
+  font-size: 1em;
+  line-height: 1.6;
+color: whitesmoke;  /* Increase line spacing for readability */
+}
+.service-item img {
+  width: 100%; /* Ensures the image takes full width of the container */
+  height: 200px; /* Sets a fixed height */
+  object-fit: cover; /* Ensures the image scales and maintains aspect ratio */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}

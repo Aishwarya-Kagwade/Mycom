@@ -1,0 +1,100 @@
+<!-- 
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contact Us</title>
+   </head>
+   <body>
+     <div class="container">
+       <h1>Contact Us Now</h1>
+       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+         <div class="mb-3">
+           <label for="name" class="form-label">Name</label>
+           <input type="text" id="name" class="form-control" formControlName="name" [ngClass]="{'is-invalid': submitted && contactForm.controls.name.invalid}">
+           <div *ngIf="submitted && contactForm.controls.name.invalid" class="invalid-feedback">
+             Name is required.
+           </div>
+         </div>
+   
+         <div class="mb-3">
+           <label for="email" class="form-label">Email Address</label>
+           <input type="email" id="email" class="form-control" formControlName="email" [ngClass]="{'is-invalid': submitted && contactForm.controls.email.invalid}">
+           <div *ngIf="submitted && contactForm.controls.email.errors?.required" class="invalid-feedback">
+             Email is required.
+           </div>
+           <div *ngIf="submitted && contactForm.controls.email.errors?.email" class="invalid-feedback">
+             Enter a valid email address.
+           </div>
+         </div>
+   
+         <div class="mb-3">
+           <label for="message" class="form-label">Message</label>
+           <textarea id="message" class="form-control" formControlName="message" rows="3" [ngClass]="{'is-invalid': submitted && contactForm.controls.message.invalid}"></textarea>
+           <div *ngIf="submitted && contactForm.controls.message.invalid" class="invalid-feedback">
+             Message is required.
+           </div>
+         </div>
+   
+         <button type="submit" class="btn btn-secondary">Submit</button>
+         
+         <div *ngIf="successMessage" class="alert alert-success mt-3">
+           Your message has been sent successfully!
+         </div>
+       </form>
+     </div>
+   </body>
+   </html>
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact Us</title>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Contact Us Now</h1>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" class="form-control" formControlName="name" 
+                   [ngClass]="{'is-invalid': submitted && contactForm.controls['name'].invalid}">
+            <div *ngIf="submitted && contactForm.controls['name'].invalid" class="invalid-feedback">
+              Name is required.
+            </div>
+          </div>
+    
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-control" formControlName="email" 
+                   [ngClass]="{'is-invalid': submitted && contactForm.controls['email'].invalid}">
+            <div *ngIf="submitted && contactForm.controls['email'].errors?.['required']" class="invalid-feedback">
+              Email is required.
+            </div>
+            <div *ngIf="submitted && contactForm.controls['email'].errors?.['email']" class="invalid-feedback">
+              Enter a valid email address.
+            </div>
+          </div>
+    
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-control" formControlName="message" rows="3" 
+                      [ngClass]="{'is-invalid': submitted && contactForm.controls['message'].invalid}"></textarea>
+            <div *ngIf="submitted && contactForm.controls['message'].invalid" class="invalid-feedback">
+              Message is required.
+            </div>
+          </div>
+    
+          <button type="submit" class="btn btn-secondary">Submit</button>
+    
+          <div *ngIf="successMessage" class="alert alert-success mt-3">
+            Your message has been sent successfully!
+          </div>
+        </form>
+      </div>
+    </body>
+    </html>
+    

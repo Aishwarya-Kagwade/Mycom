@@ -1,0 +1,86 @@
+/* General Section Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:black;
+  color:whitesmoke;
+}
+
+h2, h3 {
+  font-weight: bold;
+  color: blueviolet; /* Bluish-violet */
+  text-align: center;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 50px;
+  background-color:black; /* Light Lavender background */
+  text-align: center;
+}
+.about-us p {
+color: whitesmoke;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  color: whitesmoke;
+}
+
+.about-img {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-text h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: black; /* Light greyish background */
+}
+
+.mission, .vision {
+  max-width: 400px;
+  text-align: center;
+}
+
+.mission img, .vision img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.mission h3, .vision h3 {
+  font-size: 22px;
+  color: #8a2be2; /* BlueViolet */
+}
+
+.mission p, .vision p {
+  font-size: 16px;
+  color: whitesmoke;
+  line-height: 1.6;
+}

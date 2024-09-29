@@ -1,0 +1,56 @@
+.hero {
+  position: relative;
+  text-align: center;
+  color: white; /* Text color */
+}
+
+.hero img {
+  width: 100%; /* Full width */
+  max-height: 670px; /* Maximum height */
+  object-fit: cover; /* Ensures the image scales and crops, maintaining aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.overlay {
+  position: absolute; /* Position overlay on top of the image */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire image */
+  height: 100%; /* Cover the entire image */
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 1; /* Position behind the text */
+}
+
+.hero-content {
+  position: absolute; /* Position text on top of the overlay */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset to center */
+  padding: 20px; /* Add some padding */
+  z-index: 2; /* Ensure text is above the overlay */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 80px; /* Font size for heading */
+  margin-bottom: 15px; 
+  color: white;
+}
+
+.hero p {
+  font-size: 20px; /* Font size for paragraph */
+  margin-bottom: 20px; 
+  color: white;
+}
+
+.intro nav a {
+  margin: 0 10px; /* Space between links */
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold links */
+}
+
+.intro nav a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
